@@ -13,6 +13,7 @@ services:
     links:
       - addok-server-redis
     volumes:
+      - ./data/dump.rdb:/data/dump.rdb
       - ./data/addok.conf:/etc/addok/addok.conf
       - ./data/addok.db:/data/addok.db
     networks:
